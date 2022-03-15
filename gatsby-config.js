@@ -79,7 +79,16 @@ module.exports = {
         develop: true, // Activates purging in npm run develop
         purgeOnly: ["/all.sass"], // applies purging only on the bulma css file
       },
-    }, // must be after other CSS plugins
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
