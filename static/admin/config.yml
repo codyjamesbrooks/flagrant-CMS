@@ -32,3 +32,25 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+  - name: "career"
+    label: "Job Posting"
+    folder: "src/pages/career"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "job-post",
+        }
+      - { label: "Job Title", name: "job_title", widget: "string" }
+      - { label: "Posting Date", name: "date", widget: "datetime" }
+      - { label: "Full or Part Time", name: "work_hours", widget: "select", options: ["Full-time", "Part-time"] }
+      - { label: "Excerpt", name: "excerpt", widget: "text"}
+      - { label: "Body", name: "bogy", widget: "markdown" }
+      - { lable: "Job Icon", name: "job_icon", widget: "image" }
+
+
+
+
