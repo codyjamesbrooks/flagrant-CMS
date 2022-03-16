@@ -15,21 +15,21 @@ const Header = () => {
         <ul className="flex flex-row w-full items-center text-center lg:text-left justify-between m-0 uppercase">
           <li className="mb-0 font-mono uppercase mx-3 lg:mx-6 hover:bg-yellow hover:font-bold">
             {/* <AniLink paintDrip hex="#EA5C42" to="/about_us"> */}
-            <Link to="/">
+            <Link to="/about_us">
               About Us
             </Link>
             {/* </AniLink> */}
           </li>
           <li className="mb-0 font-mono uppercase mx-3 lg:mx-6 hover:bg-yellow hover:font-bold">
             {/* <AniLink paintDrip hex="#000000" to="/blog"> */}
-            <Link to="/">
+            <Link to="/blog">
               Our Blog
             </Link>
             {/* </AniLink> */}
           </li>
           <li className="mb-0 font-mono uppercase mx-3 lg:mx-6 hover:bg-yellow hover:font-bold">
             {/* <AniLink paintDrip hex="#ffe708" to="/contact_us"> */}
-            <Link to="/">
+            <Link to="/contact_us">
               Contact Us
             </Link>
             {/* </AniLink> */}
@@ -41,13 +41,13 @@ const Header = () => {
   )
 }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
 
