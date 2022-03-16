@@ -13,6 +13,13 @@ const Header = () => {
       </Link>
       <nav className="md:ml-6">
         <ul className="flex flex-row w-full items-center text-center lg:text-left justify-between m-0 uppercase">
+        <li className="mb-0 font-mono uppercase mx-3 lg:mx-6 hover:bg-yellow hover:font-bold">
+            {/* <AniLink paintDrip hex="#EA5C42" to="/about_us"> */}
+            <Link to="/career">
+              Careers
+            </Link>
+            {/* </AniLink> */}
+          </li>
           <li className="mb-0 font-mono uppercase mx-3 lg:mx-6 hover:bg-yellow hover:font-bold">
             {/* <AniLink paintDrip hex="#EA5C42" to="/about_us"> */}
             <Link to="/about_us">
